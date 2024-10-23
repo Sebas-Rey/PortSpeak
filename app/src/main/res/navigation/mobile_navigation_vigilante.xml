@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_vigilante"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.chatps.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.chatps.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_residentes"
+        android:name="com.example.chatps.ui.residentes.ResidentesFragment"
+        android:label="Residentes"
+        tools:layout="@layout/fragment_residentes" />
+    <fragment
+        android:id="@+id/nav_Control_Visitantes"
+        android:name="com.example.chatps.ui.visitantes.ControlVisitantesFragment"
+        android:label="@string/menu_Control_Visitantes"
+        tools:layout="@layout/fragment_visitantes" />
+</navigation>

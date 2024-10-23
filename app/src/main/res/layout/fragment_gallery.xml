@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="#f3f3f3"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background_top_profile"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:background="@drawable/background_image"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:riv_corner_radius="@dimen/_500sdp"
+                    app:riv_oval="true" />
+
+                <ImageButton
+                    android:id="@+id/addPhoto"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/circle_button_blue"
+                    app:srcCompat="@drawable/ic_camara"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+                    app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:layout_marginTop="16dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+                    app:layout_constraintStart_toStartOf="@+id/imageProfile"
+                    app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
+
+                <TextView
+                    android:id="@+id/textEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo electrónico"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/textName"
+                    app:layout_constraintStart_toStartOf="@+id/textName"
+                    app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textEmail">
+
+                    <TextView
+                        android:id="@+id/textPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Teléfono"
+                        android:background="@drawable/pregunta_background"
+                        android:drawableStart="@drawable/ic_call"
+                        android:drawablePadding="20dp"
+                        android:padding="17dp"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/textCedula"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Cédula"
+                        android:background="@drawable/pregunta_background"
+                        android:drawableStart="@drawable/ic_cc"
+                        android:drawablePadding="20dp"
+                        android:padding="17dp"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/textVivienda"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Apartamento"
+                        android:background="@drawable/pregunta_background"
+                        android:drawableStart="@drawable/ic_building"
+                        android:drawablePadding="20dp"
+                        android:padding="17dp"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Contraseña"
+                        android:background="@drawable/pregunta_background"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawablePadding="20dp"
+                        android:padding="17dp"
+                        android:textAlignment="viewStart" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:visibility="gone">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonActualizar"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Actualizar Datos"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:cornerRadius="@dimen/_8sdp" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:visibility="invisible" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

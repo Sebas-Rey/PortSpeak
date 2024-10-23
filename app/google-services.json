@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364728677213",
+    "project_id": "chatps6",
+    "storage_bucket": "chatps6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364728677213:android:309c44f4406eceb271aeb4",
+        "android_client_info": {
+          "package_name": "com.example.chatps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKxeQlqDbmdL2KwrJjA0rwLDi9UOff1Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

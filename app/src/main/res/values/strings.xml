@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">PortSpeak</string>
+    <string name="developer_name">Desarrollado por el equipo de Star Soft</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Chat Strings-->
+    <string name="welcome_back">¡Bienvenido Residente!</string>
+    <string name="login_to_continue">Accede para continuar</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in">INICIAR SESIÓN</string>
+    <string name="create_new_account">Crear Nueva Cuenta</string>
+    <string name="add_image">Añadir Imagen</string>
+    <string name="name">Nombre</string>
+    <string name="phone">Número de Teléfono</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="sign_up">Regístrate</string>
+    <string name="select_user">Selecciona un Usuario</string>
+    <string name="type_a_message">Escribe un mensaje</string>
+    <string name="online">En Línea</string>
+
+    <!--UI Strings-->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Perfil</string>
+    <string name="menu_slideshow">Parqueadero</string>
+    <string name="menu_pago_administracion">Pago de Administración</string>
+    <string name="menu_Control_Visitantes">Control de Visitantes</string>
+    <string name="parqueadero">Parqueadero</string>
+    <string name="perfil">Perfil</string>
+    <string name="inicio">Inicio</string>
+    <string name="pago_de_administracion">Pago de Administración</string>
+    <string name="hello">Hello</string>
+    <string name="control_de_visitantes" />
+    <string name="mascotas">Mascotas</string>
+    <string name="control__visitantes">Control de Visitantes</string>
+    <string name="select_image" />
+
+    <!--Pago de administración Strings-->
+    <string name="_2024_22_02">2024_22_02</string>
+    <string name="fecha_limite">fecha_limite</string>
+    <string name="menu_pago3">menu_Pago3</string>
+    <string name="menu_pago2">menu_Pago2</string>
+    <string name="menu_pago1">menu_Pago1</string>
+
+    <!--Parqueadero Strings-->
+    <string name="tipo_de_vehiculo">Tipo de vehículo</string>
+    <string name="placa">Placa</string>
+    <string name="modelo_a_o">Modelo (año)</string>
+    <string name="color">Color</string>
+    <string name="lugar_de_parqueadero">Lugar de parqueadero</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="nombre_del_visitante">Nombre del visitante</string>
+    <string name="apartamento">Apartamento</string>
+    <string name="torre">Torre</string>
+    <string name="hora_de_entrada">Hora de entrada</string>
+    <string name="hora_de_salida">Hora de salida</string>
+    <string name="numero_de_telefono">Número de teléfono</string>
+    <string name="numero_de_documento">Número de documento</string>
+    <string name="transporte">Transporte</string>
+    <string name="automovil">Automóvil</string>
+    <string name="bicicleta">Bicicleta</string>
+    <string name="motocicleta">Motocicleta</string>
+    <string name="ninguno">Ninguno</string>
+    <string name="otro">Otro</string>
+    <string name="especificar_otro_transporte">Especificar otro transporte</string>
+
+
+</resources>

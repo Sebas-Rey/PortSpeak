@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/perfil" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="@string/parqueadero" />
+        <item
+            android:id="@+id/nav_pago_administrador"
+            android:title="@string/pago_de_administracion" />
+        <item
+            android:id="@+id/nav_Control_Visitantes"
+            android:title="@string/control__visitantes" />
+        <item
+            android:id="@+id/nav_mascotas"
+            android:title="@string/mascotas" />
+    </group>
+</menu>

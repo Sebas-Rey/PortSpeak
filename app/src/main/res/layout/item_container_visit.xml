@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="@dimen/_8sdp"
+    android:background="@drawable/row_background">
+
+    <TextView
+        android:id="@+id/visitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/visitPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="@+id/visitName"
+        app:layout_constraintStart_toStartOf="@+id/visitName"
+        app:layout_constraintTop_toBottomOf="@+id/visitName" />
+
+    <TextView
+        android:id="@+id/visitTimeEnter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="@+id/visitPhone"
+        app:layout_constraintStart_toStartOf="@+id/visitPhone"
+        app:layout_constraintTop_toBottomOf="@+id/visitPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
